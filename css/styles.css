@@ -678,6 +678,6 @@ body {
   margin-top: 10px;
 }
 
-.table {
-  display: grid;
+div {
+  background-color: aliceblue;
 }
