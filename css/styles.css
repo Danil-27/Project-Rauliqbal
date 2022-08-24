@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 :root {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -26,6 +27,8 @@ body * {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -658,30 +661,127 @@ svg:not(:root) {
     max-width: 100%;
   }
 }
-.row > [class^=col-] {
-  background-color: rgba(86, 61, 124, 0.35);
-  border: 1px solid rgba(86, 61, 124, 0.56);
-  min-height: 40px;
-  text-align: center;
-  line-height: 40px;
-}
-
 body {
-  background-color: #333;
-  color: #fafafa;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.background {
-  background-color: coral;
-  border: solid 1px black;
-  margin-top: 10px;
+@media screen and (min-width: 428px) {
+  body.noscroll {
+    overflow: hidden;
+  }
+  .header__container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header__shell {
+    min-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__shell .logo {
+    z-index: 2;
+    padding: 0px 15px;
+  }
+  .header__shell .logo__link {
+    text-decoration: none;
+    font-size: 26px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 3px;
+    color: #172774;
+  }
+  .header__shell .logo__link span {
+    font-weight: 400;
+    color: #14279B;
+  }
+  .header__shell .menu {
+    display: block;
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .header__shell .menu__list {
+    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+  }
+  .header__shell .menu__list li:not(:first-child) {
+    margin-top: 30px;
+  }
+  .header__shell .menu__list .item {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  .menu.active {
+    left: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background-color: #4581F6;
+    z-index: 1;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 25px;
+    margin: 0 15px;
+    z-index: 2;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border-radius: 10px;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    border-radius: 10px;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
 }
-
-div {
-  background-color: aliceblue;
-}
-
-div {
-  position: relative;
+@media screen and (min-width: 1100px) {
+  .header .header__burger {
+    display: none;
+  }
 }
