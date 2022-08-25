@@ -65,11 +65,6 @@ figure {
   margin-bottom: 1.5rem;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 hr {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -246,36 +241,36 @@ svg:not(:root) {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
-.row > [class^=col-] {
+.row > [class*=col-] {
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 942px;
+    max-width: 952px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1150px;
+    max-width: 1160px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1390px;
+    max-width: 1400px;
   }
 }
 
@@ -351,6 +346,68 @@ svg:not(:root) {
   max-width: 100%;
 }
 
+@media screen and (min-width: 320px) {
+  .col-xs-1 {
+    -ms-flex-preferred-size: 8.3333333333%;
+        flex-basis: 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  .col-xs-2 {
+    -ms-flex-preferred-size: 16.6666666667%;
+        flex-basis: 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  .col-xs-3 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-xs-4 {
+    -ms-flex-preferred-size: 33.3333333333%;
+        flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+  .col-xs-5 {
+    -ms-flex-preferred-size: 41.6666666667%;
+        flex-basis: 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  .col-xs-6 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-xs-7 {
+    -ms-flex-preferred-size: 58.3333333333%;
+        flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  .col-xs-8 {
+    -ms-flex-preferred-size: 66.6666666667%;
+        flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  .col-xs-9 {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-xs-10 {
+    -ms-flex-preferred-size: 83.3333333333%;
+        flex-basis: 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  .col-xs-11 {
+    -ms-flex-preferred-size: 91.6666666667%;
+        flex-basis: 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  .col-xs-12 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
 @media screen and (min-width: 576px) {
   .col-sm-1 {
     -ms-flex-preferred-size: 8.3333333333%;
@@ -664,19 +721,21 @@ svg:not(:root) {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: italic;
 }
 
-@media screen and (min-width: 428px) {
-  body.noscroll {
-    overflow: hidden;
+@media screen and (min-width: 320px) {
+  .header {
+    width: 100%;
   }
   .header__container {
-    max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
   }
   .header__shell {
+    width: 100%;
     min-height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -687,26 +746,26 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin: 0 auto;
   }
   .header__shell .logo {
     z-index: 2;
-    padding: 0px 15px;
+    padding: 0px 30px;
   }
   .header__shell .logo__link {
     text-decoration: none;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-family: "Poppins";
     font-weight: 600;
     font-style: normal;
     letter-spacing: 3px;
-    color: #172774;
+    color: #14279B;
   }
   .header__shell .logo__link span {
     font-weight: 400;
-    color: #14279B;
+    color: #07253C;
   }
   .header__shell .menu {
-    display: block;
     position: fixed;
     left: -100%;
     top: 60px;
@@ -738,19 +797,15 @@ body {
     color: #000;
     font-size: 20px;
   }
-  .menu.active {
-    left: 0;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    background-color: #4581F6;
-    z-index: 1;
+  .header__shell .menu__list .fix {
+    padding-bottom: 100px;
   }
   .header__burger {
     display: block;
     position: relative;
     height: 20px;
     width: 25px;
-    margin: 0 15px;
+    margin: 0 30px;
     z-index: 2;
   }
   .header__burger span {
@@ -759,10 +814,10 @@ body {
     left: 0;
     width: 100%;
     height: 3px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 8px;
     border-radius: 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   .header__burger::before, .header__burger::after {
     content: "";
@@ -775,13 +830,228 @@ body {
   }
   .header__burger::before {
     top: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   .header__burger::after {
-    bottom: 0;
+    bottom: 1px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .header__burger.active::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    top: 8px;
+  }
+  .header__burger.active span {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .header__burger.active::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    bottom: 9px;
+  }
+  .menu.active {
+    left: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background-color: rgba(69, 129, 246, 0.4);
+    z-index: 100;
+    overflow: auto;
   }
 }
-@media screen and (min-width: 1100px) {
-  .header .header__burger {
+@media screen and (min-width: 992px) {
+  .header__shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100px;
+  }
+  .header__shell .menu {
+    position: static;
+    overflow: hidden;
+  }
+  .header__shell .menu__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 30px 0 0px;
+  }
+  .header__shell .menu__list li:not(:first-child) {
+    margin-top: 0px;
+  }
+  .header__shell .menu__list li {
+    margin-left: 45px;
+  }
+  .header__shell .menu__list li a:hover {
+    display: block;
+    color: #fff;
+    background-color: #608AF5;
+    padding: 18px 15px;
+    margin: 0px -15px;
+    border-radius: 10px;
+  }
+  .header__burger {
     display: none;
+  }
+  .menu.active {
+    display: none;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__shell {
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .contents {
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+  .contents .Block-img {
+    text-align: center;
+    background: url("/imeges/content/vektor-top.svg") -55px -10px no-repeat, url("/imeges/content/vetor-bottom.svg") 200px 70px no-repeat;
+    background-size: 50% 50%, auto auto;
+  }
+  .contents .Block-img .img-main {
+    width: 290px;
+  }
+  .contents .content {
+    margin-top: 20px;
+  }
+  .contents .Hi {
+    color: #14279B;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .contents .content__main {
+    max-width: 350px;
+    line-height: 37.5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #14279B;
+  }
+  .contents .content__text {
+    font-size: 0, 875rem;
+    letter-spacing: 1.5%;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .contents .Block-img {
+    text-align: center;
+    background: url("/imeges/content/vektor-top.svg") 40px -10px no-repeat, url("/imeges/content/vetor-bottom.svg") 320px 60px no-repeat;
+    background-size: auto auto, auto auto;
+  }
+}
+@media screen and (min-width: 550px) {
+  .contents .Block-img {
+    text-align: center;
+    background: url("/imeges/content/vektor-top.svg") 120px -10px no-repeat, url("/imeges/content/vetor-bottom.svg") 400px 60px no-repeat;
+    background-size: auto auto, auto auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contents {
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+  .contents .Block-img {
+    text-align: start;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+    background: url("/imeges/content/vektor-top.svg") 120px -10px no-repeat, url("/imeges/content/vetor-bottom.svg") 400px 60px no-repeat;
+    background-size: 0px, 0px;
+  }
+  .contents .Block-img .img-main {
+    width: auto;
+  }
+  .contents .content {
+    padding-top: 80px;
+    padding-right: 20px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background: url("/imeges/content/vektor-top.svg") -10px 0px no-repeat, url("/imeges/content/vetor-bottom.svg") 200px 180px no-repeat;
+    background-size: 60% 60%, 35% 35%;
+  }
+  .contents .Hi {
+    color: #14279B;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .contents .content__main {
+    max-width: 350px;
+    line-height: 37.5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #14279B;
+  }
+  .contents .content__text {
+    font-size: 0, 875rem;
+    letter-spacing: 1.5%;
+    line-height: 21px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contents {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  .contents .Block-img {
+    padding-top: 40px;
+    text-align: start;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contents .Block-img .img-main {
+    width: auto;
+  }
+  .contents .content {
+    padding-top: 110px;
+    padding-right: 20px;
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background: url("/imeges/content/vektor-top.svg") 50px -10px no-repeat, url("/imeges/content/vetor-bottom.svg") 155px 250px no-repeat;
+  }
+  .contents .Hi {
+    color: #14279B;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .contents .content__main {
+    max-width: 350px;
+    line-height: 37.5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #14279B;
+  }
+  .contents .content__text {
+    font-size: 0, 875rem;
+    letter-spacing: 1.5%;
+    line-height: 21px;
   }
 }

@@ -1,18 +1,20 @@
+$grid__bp-xs: 320;
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
 $grid__bp-lg: 992;
 $grid__bp-xl: 1200;
 $grid__bp-xxl: 1440;
 $grid__cols: 12;
-$gutter: 30;
+$gutter: 20;
 $scrollbar-width: 20;
 // $container-width-lg: 940;
 // $container-width-xl: 1140;
-// $container-width-xxl: 1320;
+$container-width-xxl: 1200;
 
 
 $map-grid-props: (
         '': 0,
+        '-xs': $grid__bp-xs,
         '-sm': $grid__bp-sm,
         '-md': $grid__bp-md,
         '-lg': $grid__bp-lg,
@@ -40,32 +42,32 @@ $map-grid-props: (
   }
 }
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: calc($gutter / -2) * 1px;
-  margin-left: calc($gutter / -2) * 1px;
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: calc($gutter / -2) * 1px;
+   margin-left: calc($gutter / -2) * 1px;
 }
-.row > [class^="col-"] {
-  width: 100%;
-  min-height: 1px;
-  padding-right: calc($gutter / 2) * 1px;
-	padding-left: calc($gutter / 2) * 1px;
+.row > [class*=col-] {
+   width: 100%;
+   min-height: 1px;
+   padding-right: calc($gutter / 2) * 1px;
+   padding-left: calc($gutter / 2) * 1px;
 }
 .container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding-right: calc($gutter / 2) * 1px;
-	padding-left: calc($gutter / 2) * 1px;
-  @each $modifier, $breakpoint in $map-grid-props {
-    @if($modifier == '-xxl' or $modifier == '-xl' or $modifier == '-lg') {
-      @include create-mq($breakpoint, 'min') {
-        max-width: ($breakpoint - $gutter - $scrollbar-width) * 1px;
+   max-width: 100%;
+   margin: 0 auto;
+   padding-right: calc($gutter / 2) * 1px;
+   padding-left: calc($gutter / 2) * 1px;
+   @each $modifier, $breakpoint in $map-grid-props {
+      @if($modifier == '-xxl' or $modifier == '-xl' or $modifier == '-lg') {
+         @include create-mq($breakpoint, 'min') {
+         max-width: ($breakpoint - $gutter - $scrollbar-width) * 1px;
       }
     }
   }
 }
 @each $modifier, $breakpoint in $map-grid-props {
-  @include create-col-classes($modifier, $grid__cols, $breakpoint)
+   @include create-col-classes($modifier, $grid__cols, $breakpoint)
 }
 
 // for demo

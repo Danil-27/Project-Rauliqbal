@@ -1,0 +1,148 @@
+
+//-------------------------------------------------------------320<      
+@media screen and (min-width:320px) {
+   .contents {
+      margin-top: 90px;
+      margin-bottom: 60px;
+      .Block-img {   
+         text-align: center;
+         background: url("/imeges/content/vektor-top.svg") -55px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 200px 70px no-repeat;
+         background-size: 50% 50%, auto auto;
+         .img-main{
+            width: 290px;
+         }
+      }
+      .content {
+         margin-top: 20px;
+      }
+      .Hi{
+         color: $blue;
+         font-weight: 400;
+         font-size: 1.5rem;
+      }
+      .content__main {
+         max-width: 350px;
+         line-height: 37.5px;
+         font-weight: 600;
+         font-size: 1.5rem;
+         letter-spacing: 1px;
+         color: $blue;
+      }
+      .content__text {
+         // max-width: 350px;
+         font-size: 0,875rem;
+         letter-spacing: 1.5%;
+         line-height: 21px;
+      }
+   }
+}
+//---------------------------------------------------------------390< 
+// Круги регулируем   
+@media screen and (min-width:390px) {
+   .contents{
+      .Block-img {   
+         text-align: center;
+         background: url("/imeges/content/vektor-top.svg") 40px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 320px 60px no-repeat;
+         background-size: auto auto, auto auto;
+      }
+   }
+}
+//---------------------------------------------------------------550< 
+// Круги регулируем   
+@media screen and (min-width:550px) {
+   .contents{
+      .Block-img {   
+         text-align: center;
+         background: url("/imeges/content/vektor-top.svg") 120px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 400px 60px no-repeat;
+         background-size: auto auto, auto auto;
+      }
+   }
+}
+
+//---------------------------------------------------------------768<   
+@media screen and (min-width:768px){
+   .contents {
+      margin-top: 90px;
+      margin-bottom: 60px;
+      .Block-img {
+         text-align: start;
+         order: 2;
+         text-align: center;
+         background: url("/imeges/content/vektor-top.svg") 120px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 400px 60px no-repeat;
+         background-size: 0px, 0px;
+         .img-main{
+            width: auto;
+         }
+      }
+      .content {
+         padding-top: 80px;
+         padding-right: 20px;
+         order: 1;
+         background: url("/imeges/content/vektor-top.svg") -10px 0px no-repeat , url("/imeges/content/vetor-bottom.svg") 200px 180px no-repeat;
+         background-size: 60% 60%, 35% 35%;
+      }
+      .Hi{
+         color: $blue;
+         font-weight: 400;
+         font-size: 1.5rem;
+      }
+      .content__main {
+         max-width: 350px;
+         line-height: 37.5px;
+         font-weight: 600;
+         font-size: 1.5rem;
+         letter-spacing: 1px;
+         color: $blue;
+      }
+      .content__text {
+         font-size: 0,875rem;
+         letter-spacing: 1.5%;
+         line-height: 21px;
+      }
+   }
+   
+}
+
+
+//---------------------------------------------------------------992<  
+
+@media screen and (min-width:992px){
+   .contents {
+      margin-top: 100px; //отступ сверху
+      margin-bottom: 60px;
+      .Block-img {
+         padding-top: 40px;
+         text-align: start;
+         order: 2;
+         .img-main{
+            width: auto;
+         }
+      }
+      .content {
+         padding-top: 110px;
+         padding-right: 20px;
+         margin: 0;
+         order: 1;
+         background: url("/imeges/content/vektor-top.svg") 50px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 155px 250px no-repeat;
+      }
+      .Hi{
+         color: $blue;
+         font-weight: 400;
+         font-size: 1.5rem;
+      }
+      .content__main {
+         max-width: 350px;
+         line-height: 37.5px;
+         font-weight: 600;
+         font-size: 1.5rem;
+         letter-spacing: 1px;
+         color: $blue;
+      }
+      .content__text {
+         font-size: 0,875rem;
+         letter-spacing: 1.5%;
+         line-height: 21px;
+      }
+   }
+   
+}
