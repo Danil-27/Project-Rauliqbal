@@ -1,0 +1,29 @@
+.header{
+   // фиксируем сверху
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: $white;
+   padding: 0 30px;
+   &__container{
+      // контейнер шапки
+      width: 100%;
+      min-height: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+   }
+}
+//---------------------------------------------------------------992<  
+@media screen and (min-width:992px){
+   .header{
+      &__container{
+         flex-wrap: nowrap;
+         min-height: 100px;
+      }
+   }
+}

@@ -1,0 +1,18 @@
+html.noscroll{
+   //Убираем скролл в меню
+   overflow: hidden;
+   width: 100%;
+}
+
+body{
+   font-family: "Poppins" , sans-serif;
+   font-weight: 400;
+}
+
+//---------------------------------------------------------------992<  
+@media screen and (min-width:992px){
+   html.noscroll{
+      // fix для экранов 992<  (js-classList.toggle)
+      overflow: auto;
+   }
+}

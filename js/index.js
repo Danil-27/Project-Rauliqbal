@@ -1,6 +1,6 @@
-const btn = document.querySelector('.header__burger');
+const btn = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
-const html = document.querySelector('#body');
+const html = document.querySelector('#html__noscroll');
 
 // Закрывает - откревыет меню бургер . Добоыляет к боди класс noscroll 
 if(menu && btn) {

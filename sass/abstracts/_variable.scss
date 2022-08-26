@@ -1,23 +1,14 @@
 // ---------------------------------------Grid
-// $grid__bp-sm: 576;
-// $grid__bp-md: 768;
-// $grid__bp-lg: 992;
-// $grid__bp-xl: 1200;
-// $grid__bp-xxl: 1440;
-// $grid__cols: 12;
-// $gutter: 20;
-// $scrollbar-width: 20;
-// // $container-width-lg: 940;
-// // $container-width-xl: 1140;
-
+//Медиа
 $grid__bp-xs: 428;
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
 $grid__bp-lg: 992;
 $grid__bp-xl: 1200;
-$grid__bp-xxl: 1440;
+$grid__bp-xxl: 1200;
 $grid__cols: 12;
 $gutter: 20;
+//Ширина контейнера
 $container-width-xxl: 1200;
 
 
@@ -30,16 +21,6 @@ $map-grid-props: (
     '-lg': $grid__bp-lg,
     '-xl': $grid__bp-xl,
     '-xxl': $grid__bp-xxl
-);
-
-$map-grid-props: (
-        '': 0,
-        '-xs': $grid__bp-xs,
-        '-sm': $grid__bp-sm,
-        '-md': $grid__bp-md,
-        '-lg': $grid__bp-lg,
-        '-xl': $grid__bp-xl,
-        '-xxl': $grid__bp-xxl
 );
 
 

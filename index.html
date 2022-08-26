@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html id="body">
+<html id="html__noscroll">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Simple css grid with sass and css variables</title>
+   <title>Rauliqbal</title>
    <meta name="description"
       content="Example css grid with using Sass and CSS3 variables, Flexbox, for making responsive, scalable and independent grid, without UI framework." />
    <link rel="stylesheet" href="/css/styles.css">
@@ -13,69 +13,67 @@
 
 <body>
    <header class="header">
-      <div class="header__container">
-         <div class="header__shell">
+      <div class="header__container container">
             <div class="logo">
-               <a href="#" class="logo__link">
-                  Raul<span>iqbal</span>
-               </a>
+               <a href="#" class="logo__link">Raul<span>iqbal</span></a>
             </div>
-            <div class="header__burger">
+            <div class="burger">
                <span></span>
             </div>
             <nav class="menu">
                <ul class="menu__list">
-                  <li><a class="item menu__link" href="#">about</a></li>
-                  <li><a class="item menu__link" href="#">Passionse</a></li>
-                  <li><a class="item menu__link" href="#">Portfolio</a></li>
-                  <li><a class="item menu__link fix" href="#">Contact Me</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Passions</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
+                  <li class="menu__item"><a class="menu__link menu__link_fix" href="#">Contact Me</a></li>
                </ul>
             </nav>
-         </div>
       </div>
    </header>
-   <section class="contents">
-      <div class="contents__shell">
+   <main class="contents">
          <div class="container">
-            <div class="row ">
-               <div class="Block-img  col-md-5 col-lg-6">
-                  <img class="img-main" src="./imeges/content/Men.svg" alt="Тут должны быть картинка)))">
+            <div class="row">
+               <div class="picture col-md-5 col-lg-6">
+                  <img class="picture__img" src="./imeges/content/Men.svg" alt="Тут должны быть картинка)))">
                </div>
-               <div class="content   col-md-7 col-lg-6">
-                  <div class="Hi">Hi !</div>
-                  <h1 class="content__main">
-                     I’m Muhamad Raul.</br>
-                     a Front-End Developer</h1>
-                  <p class="content__text">
-                     Front-End developer based in Bekasi, Indonesian</br>
-                     I’am coding with a clean and beautiful problem</br>
-                     solving in mind.</p>
-               </div>
+               <section class="content col-md-7 col-lg-6">
+                  <div class="content__smail">Hi !</div>
+                  <h1 class="content__header">
+                     <span class="content__block">I’m Muhamad Raul.</span>
+                     <span class="content__block">a Front-End Developer</span>
+                  </h1>
+                  <p class="content__paragraf">
+                     <span class="content__block">Front-End developer based in Bekasi, Indonesian</span>
+                     <span class="content__block">I’am coding with a clean and beautiful problem</span>
+                     solving in mind.
+                  </p>
+               </section>
             </div>
          </div>
-      </div>
-   </section>
+      </main>
+
+      <!-- 42мин-->
    <section class="passions">
       <div class="container">
          <div class="row">
             <h2 class="title col-sm-12">Additional <span>passions</span></h2>
             <div class="item col-sm-6 col-md-4 ">
                <div class="item__shell">
-                  <img src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
+                  <img class="img-1" src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
                   <p>Front-End Developer</p>
                   <p>(Sass, Bootstrap, Tailwind)</p>
                </div>
             </div>
             <div class="item col-sm-6 col-md-4">
                <div class="item__shell">
-                  <img src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
+                  <img class="img-2" src="/imeges/passions/back-end.svg" alt="Тут должны быть картинка)))">
                   <p>Back-End Developer</p>
                   <p>(NodeJS, Laravel, Codeigniter)</p>
                </div>
             </div>
             <div class="item col-sm-12 col-md-4">
                <div class="item__shell">
-                  <img src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
+                  <img class="img-3" src="/imeges/passions/Ul-UX.svg" alt="Тут должны быть картинка)))">
                   <p>Front-End Developer</p>
                   <p>(Sass, Bootstrap, Tailwind)</p>
                </div>
@@ -84,6 +82,7 @@
       </div>
    </section>
 
+   
 
    <script src="js/index.js"></script>
 </body>

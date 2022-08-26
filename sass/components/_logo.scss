@@ -1,0 +1,16 @@
+.logo{
+   z-index: 2;
+   &__link{
+      text-decoration: none;
+      font-size: 1.625rem;
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 3px;
+      color: $blue;
+      span{
+         font-weight: 400;
+         color: $dark-blue;
+      }
+   }
+}
