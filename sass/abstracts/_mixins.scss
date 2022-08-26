@@ -1,0 +1,41 @@
+// for grid layout
+@mixin create-mq($breakpoint, $min-or-max) {
+   @if($breakpoint == 0) {
+     @content;
+   } @else {
+     @media screen and (#{$min-or-max}-width: ($breakpoint * 1px)) {
+       @content;
+     }
+   }
+ }
+ @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+   @include create-mq($breakpoint, 'min') {
+     @for $i from 1 through $grid-cols {
+       .col#{$modifier}-#{$i} {
+         flex: 0 0 percentage(calc($i / $grid-cols));
+         max-width: percentage(calc($i / $grid-cols));
+       }
+     }
+   }
+ }
+ 
+ //fluid fonts
+ @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+    & {
+       @each $property in $properties {
+          #{$property}: $min-value;
+       }
+ 
+       @media screen and (min-width: $min-vw) {
+          @each $property in $properties {
+             #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+          }
+       }
+ 
+       @media screen and (min-width: $max-vw) {
+          @each $property in $properties {
+             #{$property}: $max-value;
+          }
+       }
+    }
+ }

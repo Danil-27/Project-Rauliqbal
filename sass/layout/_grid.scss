@@ -1,85 +1,92 @@
-$grid__bp-xs: 320;
-$grid__bp-sm: 576;
-$grid__bp-md: 768;
-$grid__bp-lg: 992;
-$grid__bp-xl: 1200;
-$grid__bp-xxl: 1440;
-$grid__cols: 12;
-$gutter: 20;
-$scrollbar-width: 20;
-// $container-width-lg: 940;
-// $container-width-xl: 1140;
-$container-width-xxl: 1200;
-
-
-$map-grid-props: (
-        '': 0,
-        '-xs': $grid__bp-xs,
-        '-sm': $grid__bp-sm,
-        '-md': $grid__bp-md,
-        '-lg': $grid__bp-lg,
-        '-xl': $grid__bp-xl,
-        '-xxl': $grid__bp-xxl
-);
-
-@mixin create-mq($breakpoint, $min-or-max) {
-  @if($breakpoint == 0) {
-    @content;
-  } @else {
-    @media screen and (#{$min-or-max}-width: ($breakpoint * 1px)) {
-      @content;
-    }
-  }
-}
-@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
-  @include create-mq($breakpoint, 'min') {
-    @for $i from 1 through $grid-cols {
-      .col#{$modifier}-#{$i} {
-        flex-basis: percentage(calc($i / $grid-cols));
-        max-width: percentage(calc($i / $grid-cols));
-      }
-    }
-  }
-}
-.row {
-   display: flex;
-   flex-wrap: wrap;
-   margin-right: calc($gutter / -2) * 1px;
-   margin-left: calc($gutter / -2) * 1px;
-}
-.row > [class*=col-] {
-   width: 100%;
-   min-height: 1px;
-   padding-right: calc($gutter / 2) * 1px;
-   padding-left: calc($gutter / 2) * 1px;
-}
 .container {
    max-width: 100%;
    margin: 0 auto;
    padding-right: calc($gutter / 2) * 1px;
-   padding-left: calc($gutter / 2) * 1px;
-   @each $modifier, $breakpoint in $map-grid-props {
-      @if($modifier == '-xxl' or $modifier == '-xl' or $modifier == '-lg') {
-         @include create-mq($breakpoint, 'min') {
-         max-width: ($breakpoint - $gutter - $scrollbar-width) * 1px;
-      }
+    padding-left: calc($gutter / 2) * 1px;
+   @include create-mq($grid__bp-xxl, 'min') {
+     max-width: $container-width-xxl * 1px;
+   }
+ }
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: calc($gutter / -2) * 1px;
+   margin-left: calc($gutter / -2) * 1px;
+ }
+ .row > .col, .row > [class*="col-"] {
+   width: 100%;
+   min-height: 1px;
+   padding-right: calc($gutter / 2) * 1px;
+    padding-left: calc($gutter / 2) * 1px;
+ }
+ .row-flush {
+    margin-left: 0;
+    margin-right: 0;
+ 
+    > .col,
+    > [class*="col-"] {
+       padding-left: 0;
+       padding-right: 0;
     }
-  }
-}
-@each $modifier, $breakpoint in $map-grid-props {
+ }
+ @each $modifier, $breakpoint in $map-grid-props {
+   @include create-mq($breakpoint, 'min') {
+     .row#{$modifier}-start {
+       justify-content: flex-start;
+     }
+     .row#{$modifier}-center {
+       justify-content: center;
+     }
+     .row#{$modifier}-end {
+       justify-content: flex-end;
+     }
+     .row#{$modifier}-around {
+       justify-content: space-around;
+     }
+     .row#{$modifier}-between {
+       justify-content: space-between;
+     }
+     .row#{$modifier}-align-center{
+       align-items: center;
+     }
+   }
+ }
+ @each $modifier, $breakpoint in $map-grid-props {
+   @include create-mq($breakpoint, 'min') {
+     .offset#{$modifier}-0 {
+       margin-left: 0;
+     }
+     @for $i from 1 through $grid__cols {
+       .order#{$modifier}-#{$i} {
+         order: #{$i};
+       }
+       .offset#{$modifier}-#{$i} {
+         margin-left: calc((100 / ($grid__cols / $i) ) * 1%);
+       }
+     }
+   }
+ }
+ 
+ @each $modifier, $breakpoint in $map-grid-props {
    @include create-col-classes($modifier, $grid__cols, $breakpoint)
-}
-
-// for demo
-// .row > [class^=col-] {
-//   background-color: rgba(86,61,124, .35);
-//   border: 1px solid rgba(86, 61, 124, 0.56);
-//   min-height: 40px;
-//   text-align: center;
-//   line-height: 40px;
-// }
-// body {
-//   background-color: #333;
-//   color: #fafafa;
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-// }
+ }
+ .hidden {
+   display: none !important;
+ }
+ @each $modifier , $breakpoint in $map-grid-props {
+   @if($modifier != '') {
+     @include create-mq($breakpoint - 1, 'max') {
+       .hidden#{$modifier}-down {
+         display: none !important;
+       }
+     }
+     @include create-mq($breakpoint, 'min') {
+       .hidden#{$modifier}-up {
+         display: none !important;
+       }
+     }
+   }
+   
+ }
+ 
+ 

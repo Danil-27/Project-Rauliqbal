@@ -1,13 +1,13 @@
 const btn = document.querySelector('.header__burger');
 const menu = document.querySelector('.menu');
-const body = document.body;
+const html = document.querySelector('#body');
 
 // Закрывает - откревыет меню бургер . Добоыляет к боди класс noscroll 
 if(menu && btn) {
    btn.addEventListener('click', () => {
       menu.classList.toggle('active')
       btn.classList.toggle('active')
-      body.classList.toggle('noscroll')
+      html.classList.toggle('noscroll')
    })
 };
 
@@ -17,7 +17,7 @@ menu.addEventListener('click', e => {
    if (e.target.classList.contains('menu')) {
       menu.classList.remove('active')
       btn.classList.toggle('active')
-      body.classList.toggle('noscroll')
+      html.classList.toggle('noscroll')
    }
 
 })
@@ -28,7 +28,7 @@ menu.querySelectorAll('.menu__link').forEach(link => {
    link.addEventListener('click' , () =>{
       menu.classList.remove('active')
       btn.classList.toggle('active')
-      body.classList.toggle('noscroll')
+      html.classList.toggle('noscroll')
    })
 })
 
