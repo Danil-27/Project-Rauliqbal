@@ -3,10 +3,16 @@
    margin: 0 auto;
    padding-right: calc($gutter / 2) * 1px;
     padding-left: calc($gutter / 2) * 1px;
-   @include create-mq($grid__bp-xxl, 'min') {
-     max-width: $container-width-xxl * 1px;
+    @include create-mq($grid__bp-xl, 'min') {
+      max-width: $container-width-xl * 1px;
+    }
+    @include create-mq($grid__bp-xxl, 'min') {
+      max-width: $container-width-xxl * 1px;
+    }
+    @include create-mq($grid__bp-3xl, 'min') {
+      max-width: $container-width-3xl * 1px;
+    }
    }
- }
  .row {
    display: flex;
    flex-wrap: wrap;

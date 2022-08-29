@@ -5,12 +5,14 @@ $grid__bp-sm: 576;
 $grid__bp-md: 768;
 $grid__bp-lg: 992;
 $grid__bp-xl: 1200;
-$grid__bp-xxl: 1200;
+$grid__bp-xxl: 1440;
+$grid__bp-3xl: 1680;
 $grid__cols: 12;
 $gutter: 20;
 //Ширина контейнера
+$container-width-xl: 1160;
 $container-width-xxl: 1200;
-
+$container-width-3xl: 1550;
 
 
 $map-grid-props: (
@@ -20,7 +22,8 @@ $map-grid-props: (
     '-md': $grid__bp-md,
     '-lg': $grid__bp-lg,
     '-xl': $grid__bp-xl,
-    '-xxl': $grid__bp-xxl
+    '-xxl': $grid__bp-xxl,
+    '-3xl': $grid__bp-xxl
 );
 
 
