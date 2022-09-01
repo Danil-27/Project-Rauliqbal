@@ -1,24 +1,53 @@
 .colum{
    padding: 1.1rem  0.9rem 0.9rem 0.9rem ;
    box-shadow: 0px 0px 15px 0px #c7c6d4;
-   position: relative;
    margin-bottom: 1.6rem;
+   position: relative;
    &__header{
-      display: flex;
       min-height: 195px;
       margin-bottom: 36px;
-      background: url("/imeges/portfolio/circle-1.svg") 0 0 no-repeat;
+      &_col{
+         display: flex;
+         background: url("/imeges/portfolio/circle-1.svg") 0 0 no-repeat;
+      }
+      &_pillar{
+         background: url("/imeges/portfolio/cricle-2.svg") 0 0 no-repeat;
+      }
+      &_columan{
+         background: url("/imeges/portfolio/cricle-3.svg") 0 0 no-repeat;
+      }
    }
    &__title{
       padding-top: 9px;
       padding-left: 14px;
       font-size: 25px;
-      color: #6C63FF;
       font-weight: 600;
+      &_col{
+         color: #6C63FF;
+      }
+      &_pillar{
+         color: #4581F6;
+      }
+      &_columan{
+            color: $black;
+      }
+   }
+   &__text{
+      font-size: 16px;
+      line-height: 0px;
+      &_pillar{
+         padding-left: 132px;
+         color: #4581F6;
+         line-height: 0px;
+      }
+      &_columan{
+         padding-left: 14px;
+         color: $black;
+      }
    }
    &__img{
       position: absolute;
       bottom: 0;
-      left: 40px;
+      right: 0;
    }
 }
