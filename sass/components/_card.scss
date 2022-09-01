@@ -1,0 +1,26 @@
+.card{
+   background-color: $white;
+   text-align: center;
+   box-shadow: 0px 0px 15px 0px #c7c6d4;
+   padding: 1.1rem;
+   margin-bottom: 1.6rem;
+   border-radius: 15px;
+   &__subtitles{
+      font-size: 1.4rem;
+   }
+   &__before{
+      font-weight: 600;
+   }
+}
+
+@media screen and (min-width:768px) {
+   .card{
+      //Делаем меньше паддинги для того , чтобы текст не переносился 
+      padding: 0.5rem;
+   }
+}
+@media screen and (min-width:795px) {
+   .card{
+      padding: 1.1rem;
+   }
+}

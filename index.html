@@ -14,75 +14,84 @@
 <body>
    <header class="header">
       <div class="header__container container">
-            <div class="logo">
-               <a href="#" class="logo__link">Raul<span>iqbal</span></a>
-            </div>
-            <div class="burger">
-               <span></span>
-            </div>
-            <nav class="menu">
-               <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Passions</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link_fix" href="#">Contact Me</a></li>
-               </ul>
-            </nav>
+         <div class="logo">
+            <a href="#" class="logo__link">Raul<span>iqbal</span></a>
+         </div>
+         <div class="burger">
+            <span></span>
+         </div>
+         <nav class="menu">
+            <ul class="menu__list">
+               <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+               <li class="menu__item"><a class="menu__link" href="#">Passions</a></li>
+               <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
+               <li class="menu__item"><a class="menu__link" href="#">Contact Me</a></li>
+            </ul>
+         </nav>
       </div>
    </header>
-   <main class="contents">
-         <div class="container">
-            <div class="row">
-               <div class="picture col-md-5 col-lg-6">
-                  <img class="picture__img" src="./imeges/content/Men.svg" alt="Тут должны быть картинка)))">
-               </div>
-               <section class="content col-md-7 col-lg-6">
+   <main class="page">
+      <section class="part container">
+         <div class="row">
+            <div class="picture col-md-5 col-lg-6">
+               <img class="picture__img" src="./imeges/content/Men.svg" alt="Тут должны быть картинка)))">
+            </div>
+            <div class="content col-md-7 col-lg-6">
+               <h1 class="content__header">
                   <div class="content__smail">Hi !</div>
-                  <h1 class="content__header">
-                     <span class="content__block">I’m Muhamad Raul.</span>
-                     <span class="content__block">a Front-End Developer</span>
-                  </h1>
-                  <p class="content__paragraf">
-                     <span class="content__block">Front-End developer based in Bekasi, Indonesian</span>
-                     <span class="content__block">I’am coding with a clean and beautiful problem</span>
-                     solving in mind.
-                  </p>
-               </section>
+                  <span class="content_block">I’m Muhamad Raul.</span>
+                  <span class="content_block">a Front-End Developer</span>
+               </h1>
+               <p class="content__paragraf">Front-End developer based in Bekasi, Indonesian I’am coding with a clean and
+                  beautiful problem solving in mind.
+               </p>
             </div>
          </div>
-      </main>
-
-      <!-- 42мин-->
-   <section class="passions">
-      <div class="container">
-         <div class="row">
-            <h2 class="title col-sm-12">Additional <span>passions</span></h2>
-            <div class="item col-sm-6 col-md-4 ">
-               <div class="item__shell">
-                  <img class="img-1" src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
-                  <p>Front-End Developer</p>
+      </section>
+      <section class="passions container ">
+         <h2 class="subtitles">Additional <span class="subtitles_affter">passions</span></h2>
+         <div class="row row-xs-center">
+            <div class="col-xs-9  col-sm-8  col-md-5 col-lg-4">
+               <div class="card  card__passions">
+                  <img class="card__imges" src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
+                  <p class="card__subtitles"><span class="card__before">Front-End</span> Developer</p>
                   <p>(Sass, Bootstrap, Tailwind)</p>
                </div>
             </div>
-            <div class="item col-sm-6 col-md-4">
-               <div class="item__shell">
-                  <img class="img-2" src="/imeges/passions/back-end.svg" alt="Тут должны быть картинка)))">
-                  <p>Back-End Developer</p>
+            <div class="col-xs-9  col-sm-8  col-md-5 col-lg-4 ">
+               <div class="card  card__passions">
+                  <img class="card__imges" src="/imeges/passions/back-end.svg" alt="Тут должны быть картинка)))">
+                  <p class="card__subtitles"><span class="card__before">Back-End</span> Developer</p>
                   <p>(NodeJS, Laravel, Codeigniter)</p>
                </div>
             </div>
-            <div class="item col-sm-12 col-md-4">
-               <div class="item__shell">
-                  <img class="img-3" src="/imeges/passions/Ul-UX.svg" alt="Тут должны быть картинка)))">
-                  <p>Front-End Developer</p>
-                  <p>(Sass, Bootstrap, Tailwind)</p>
+            <div class="col-xs-9  col-sm-8  col-md-5 col-lg-4">
+               <div class="card  card__passions">
+                  <img class="card__imges" src="/imeges/passions/Ul-UX.svg" alt="Тут должны быть картинка)))">
+                  <p class="card__subtitles"><span class="card__before">UI/UX</span> Designer</p>
+                  <p>(Figma, Zeplin, Adobe XD)</p>
                </div>
             </div>
          </div>
-      </div>
-   </section>
+      </section>
+      <section class="portfolio container">
+         <h2 class="subtitles">My <span class="subtitles_affter">portfolio</span></h2>
+         <div class="row">
+            <div class="col-xs-8">
+               <div class="colum">
+                  <div class="colum__header">
+                     <div class="colum__icon"><img src="./imeges/portfolio/Group.svg" alt="Должна быть картинка"></div>
+                     <div class="colum__title colum__title_p">Sendpay</div>
+                  </div>
+                  <div class="colum__img"><img src="/imeges/portfolio/img-1 1.svg" alt="Должна быть картинка"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!-- 42мин-->
 
-   
+
 
    <script src="js/index.js"></script>
 </body>

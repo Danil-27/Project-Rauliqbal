@@ -1,36 +1,42 @@
 .content {
    padding-top: 20px;
+   &__header {
+      margin-top: 0;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.005em;
+      color: $blue;
+   }
    &__smail{
       color: $blue;
       font-weight: 400;
-      font-size: 1.5rem;
-   }
-   &__header {
-      max-width: 350px;
-      line-height: 37.5px;
-      font-weight: 600;
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      color: $blue;
    }
    &__paragraf {
-      // max-width: 350px;
-      font-size: 0,875rem;
-      letter-spacing: 1.5%;
-      line-height: 21px;
+      font-size: 1.2rem;
+      letter-spacing: 0.015em;
    }
    &__block{
       display: block;
    }
 }
+@include create-mq($grid__bp-xs - 1 , 'max') {
+   .content{
+      &__header {
+         font-size: 1.4rem;
+      }
+      &__paragraf {
+         font-size: 0.8rem;
+      }
+   } 
+ }
 //---------------------------------------------------------------768<   
 @media screen and (min-width:768px){
    .content {
       padding-top: 80px;
       padding-right: 20px;
       order: 1;
-      background: url("/imeges/content/vektor-top.svg") -10px 0px no-repeat , url("/imeges/content/vetor-bottom.svg") 200px 180px no-repeat;
-      background-size: 60% 60%, 35% 35%;
       &__smail{
          color: $blue;
          font-weight: 400;
@@ -43,11 +49,6 @@
          font-size: 1.5rem;
          letter-spacing: 1px;
          color: $blue;
-      }
-      &__paragraf {
-         font-size: 0,875rem;
-         letter-spacing: 1.5%;
-         line-height: 21px;
       }
    }
 }
@@ -59,7 +60,8 @@
       padding-right: 20px;
       margin: 0;
       order: 1;
-      background: url("/imeges/content/vektor-top.svg") 50px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 155px 250px no-repeat;
+      background: url("/imeges/content/vektor-top.svg") 30px 0px no-repeat , url("/imeges/content/vetor-bottom.svg") 300px 310px no-repeat;
+      background-size: 40% 40% , 30% 30%;
       &__smail{
          color: $blue;
          font-weight: 400;
@@ -72,11 +74,6 @@
          font-size: 1.5rem;
          letter-spacing: 1px;
          color: $blue;
-      }
-      &__paragraf {
-         font-size: 0,875rem;
-         letter-spacing: 1.5%;
-         line-height: 21px;
       }
    }
 }

@@ -1,0 +1,40 @@
+.colum{
+   padding: 1rem 0.7rem 0.9rem 1rem;
+   box-shadow: 0px 0px 15px 0px #c7c6d4;
+   background: url("/imeges/portfolio/circle-1.svg") 17px 19px no-repeat;
+   position: relative;
+   z-index: 10;
+   &::after{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 17px;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: brown;
+      z-index: 1;
+   }
+   &__header {
+      display: flex;
+      align-items: center;
+   }
+   &__icon {
+      z-index: 10;
+   }
+   &__title{
+      z-index: 4;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #6C63FF;
+      z-index: 10;
+      &_p{
+         padding-left: 0.8rem;
+         padding-bottom: 0.6rem;
+      }
+   }
+   &__img{
+      padding-left: 1.6rem;
+      z-index: 10;// Конкретно img он не хочет перебивать 
+   }
+}

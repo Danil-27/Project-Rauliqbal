@@ -1,0 +1,19 @@
+.part {
+   padding-top: 5rem;
+   padding-bottom: 3.3rem;
+}
+@media screen and (min-width:768px){
+   .part {
+      background: url("/imeges/content/vektor-top.svg") -90px 20px no-repeat , url("/imeges/content/vetor-bottom.svg") 210px 370px no-repeat;
+      background-size: 50% 50%, 25% 25%;
+   }
+}
+@media screen and (min-width:992px){
+   .part {
+      padding-top: 5.5rem;
+      padding-bottom: 5rem;
+      background: url("/imeges/content/vektor-top.svg") -30px 30px no-repeat , url("/imeges/content/vetor-bottom.svg") 210px 370px no-repeat;
+      background-size: 0%, 0%;
+   }
+}
+

@@ -28,8 +28,16 @@ $map-grid-props: (
 
 
 //------------------------------------- color
+:root{
+   --white: #fff;   
+   --black: #000;
+   --blue: #14279B;
+   --light-blue: #608AF5;
+   --dark-blue:#07253C;
+}
 $white: #fff;
 $black: #000;
 $blue: #14279B;
 $light-blue: #608AF5;
 $dark-blue:#07253C;
+//------------------------------------ font

@@ -1,51 +1,18 @@
-   .passions{
-      margin-top: 70px;
-      .title{
-         text-align: center;
-         font-weight: 400;
-         color: $blue;
-         & span{
-            color: #172774;
-            font-weight: 600;
-         }
-      }
-      .item{
-         margin-top: 30px;
-         text-align: center;
-         &__shell{
-            display: inline-block;
-            padding: 20px 0px 25px 0px;
-            box-shadow: 0px 0px 15px 0px #c7c6d4;
-            & img{
-               padding: 0px 60px 18px;
-            }
-            & p:last-child{
-               margin-top: 14px;
-            }
-         }
-      }
-   }
-//---------------------------------------------------------------576<  
-@media screen and (min-width:576px) {
-   .passions{
-      .item{
-         margin-top: 70px;
-         &__shell{
-         }
-      }
-   }
-}
-//---------------------------------------------------------------768<  
-@media screen and (min-width:768px) {
-   .passions{
-      .container{
-         background: url('/imeges/content/vektor-top.svg') 50px 0 no-repeat , url('/imeges/content/vetor-bottom.svg') 600px 240px no-repeat;
-         background-size: auto auto , 400px 380px;
-         padding-bottom: 200px;
-      }
-      .item__shell{
-         background-color: $white;
-      }
-   }
+.passions{
+   padding-bottom: 3.9rem;
 }
 
+@media screen and (min-width:768px) {
+   .passions{
+      padding-bottom: 11.1rem;
+      background: url('/imeges/content/vektor-top.svg') 10px 0 no-repeat , url('/imeges/content/vetor-bottom.svg') 460px 240px no-repeat;
+      background-size: auto auto , 55% 55%;
+      }
+}
+@media screen and (min-width:1680px) {
+   .passions{
+      padding-bottom: 11.1rem;
+      background: url('/imeges/content/vektor-top.svg') 10px 0 no-repeat , url('/imeges/content/vetor-bottom.svg') 530px 230px no-repeat;
+      background-size: auto auto , 65% 65%;
+      }
+}

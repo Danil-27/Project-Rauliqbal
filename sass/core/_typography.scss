@@ -1,0 +1,12 @@
+:root{
+   --baseline: 1.5;
+   --base-font-size: 18px;
+   --font-family:"Poppins" , sans-serif;
+   --font-weight: 400;
+}
+
+// @include create-mq($grid__bp-xs - 1 , 'max') {
+//    :root {
+//       --base-font-size: 14px;
+//    }
+//  }

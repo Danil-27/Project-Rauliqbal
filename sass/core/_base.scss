@@ -3,10 +3,14 @@ html.noscroll{
    overflow: hidden;
    width: 100%;
 }
+html, body{
+   font-size: var(--base-font-size);
+   line-height: var(--baseline);
+}
 
 body{
-   font-family: "Poppins" , sans-serif;
-   font-weight: 400;
+   font-family: var(--font-family);
+   font-weight: var(--font-weight);
 }
 
 //---------------------------------------------------------------992<  
