@@ -1,0 +1,26 @@
+.section{
+   padding-bottom: 9.3rem;
+   background-repeat: no-repeat;
+   &__part{
+      padding-bottom: 6.5rem;
+      background-image: url("/imeges/content//top-cricle.svg"), url("/imeges/content/bottom-cricle.svg"), url("/imeges/content/center-cricke.svg") ;
+      background-position: 2% -6% , 30% 63% , 100% 25%;
+   }
+   &__passions{
+      background-image: url("/imeges/passions/top-cricle.svg"),  url("/imeges/passions/bottom-cricle.svg");
+      background-position: 0% -6% , 72% 105%; 
+   }
+   &__portfolio{
+      background-image: url("/imeges/portfolio/top-cricle.svg"),  url("/imeges/passions/bottom-cricle.svg");
+      background-position: 1% -10%, 102% 95%;
+   }
+   &__contact{
+      padding-bottom: 0;
+   }
+}
+@media screen and (max-width:992px) {
+   .section__passions , .section__portfolio{
+      background-image: none;
+   }
+
+}
