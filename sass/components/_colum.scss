@@ -42,13 +42,13 @@
          line-height: 0rem;
       }
       &_columan{
-         padding-left: 0.7rem;
+         padding-left: 0.8rem;
          color: $black;
       }
    }
    &__img{
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 0px;
+      right: 4px;
    }
 }
