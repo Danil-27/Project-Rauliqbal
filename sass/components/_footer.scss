@@ -1,0 +1,26 @@
+.footer{
+   background-image: url("/imeges/footer/Vector-xs.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 30vmax;
+   padding-bottom: 1.1rem;
+   &__title{
+      text-align: center;
+      font-size: 1.9rem;
+      color: $white;
+      
+   }
+}
+
+@include create-mq($grid__bp-xs , 'min') {
+   .footer{
+      background-image: url("/imeges/footer/wave.svg") ;
+      padding-top: 24vmax;
+   }
+ }
+
+ @media screen and(min-width:2560px) {
+   .footer{
+      padding-top: 15vmax;
+   }
+ }
