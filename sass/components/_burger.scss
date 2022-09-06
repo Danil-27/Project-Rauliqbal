@@ -31,7 +31,6 @@
       bottom: 1px;
       transition: all 1s;
    }
-   // Клик бургер
    &.active::before{
       transform: rotate(-45deg);
       transition: all 1s;
@@ -47,7 +46,7 @@
       bottom: 9px;
    }
 }
-//---------------------------------------------------------------992<  
+
 @media screen and (min-width:992px){
    .burger{ 
       //убираем бургер  

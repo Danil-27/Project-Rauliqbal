@@ -1,21 +1,26 @@
 .footer{
-   background-image: url("/imeges/footer/Vector-xs.svg");
+   background-image: url("/imeges/footer/wave.svg") ;
    background-repeat: no-repeat;
    background-size: cover;
-   padding-top: 30vmax;
+   padding-top: 42vmax;
    padding-bottom: 1.1rem;
    &__title{
       text-align: center;
       font-size: 1.9rem;
       color: $white;
-      
+      padding: 0 0.5rem;
    }
 }
 
 @include create-mq($grid__bp-xs , 'min') {
    .footer{
-      background-image: url("/imeges/footer/wave.svg") ;
-      padding-top: 24vmax;
+      padding-top: 42vmax;
+   }
+ }
+
+ @include create-mq($grid__bp-md , 'min') {
+   .footer{
+      padding-top: 21vmax;
    }
  }
 

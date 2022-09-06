@@ -1,5 +1,4 @@
-// ---------------------------------------Grid
-//Медиа
+
 $grid__bp-xs: 428;
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
@@ -9,9 +8,9 @@ $grid__bp-xxl: 1440;
 $grid__bp-3xl: 1680;
 $grid__cols: 12;
 $gutter: 20;
-//Ширина контейнера
+
 $container-width-xl: 1160;
-$container-width-xxl: 1200;
+$container-width-xxl: 1300;
 $container-width-3xl: 1550;
 
 
@@ -27,17 +26,14 @@ $map-grid-props: (
 );
 
 
-//------------------------------------- color
-:root{
-   --white: #fff;   
-   --black: #000;
-   --blue: #14279B;
-   --light-blue: #608AF5;
-   --dark-blue:#07253C;
-}
+
+
+$-font-dark-blue: #002265;
+$-font-light-blue: #14279B;
+
+
 $white: #fff;
 $black: #000;
 $blue: #14279B;
 $light-blue: #608AF5;
 $dark-blue:#07253C;
-//------------------------------------ font

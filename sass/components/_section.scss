@@ -1,26 +1,58 @@
 .section{
    padding-bottom: 9.3rem;
    background-repeat: no-repeat;
+   background-image: url("/imeges/content/cricle-blue.svg") , url("/imeges/content/cricle-blue.svg") , url("/imeges/content/cricle-blue.svg");
    &__part{
-      padding-bottom: 6.5rem;
-      background-image: url("/imeges/content//top-cricle.svg"), url("/imeges/content/bottom-cricle.svg"), url("/imeges/content/center-cricke.svg") ;
-      background-position: 2% -6% , 30% 63% , 100% 25%;
+      padding-bottom: 3.3rem;
+      background-position: 3% 1% , 21% 64% , 95% 25%;
+      background-size: 170px , 155px , 260px ;
    }
    &__passions{
-      background-image: url("/imeges/passions/top-cricle.svg"),  url("/imeges/passions/bottom-cricle.svg");
-      background-position: 0% -6% , 72% 105%; 
+      background-position: 0% 8% , 71% 92%; 
+      background-size: 170px, 250px ;
    }
    &__portfolio{
-      background-image: url("/imeges/portfolio/top-cricle.svg"),  url("/imeges/passions/bottom-cricle.svg");
-      background-position: 1% -10%, 102% 95%;
+      background-position: 3% -6%, 102% 86%;
+      background-size: auto , 250px ;
    }
    &__contact{
+      background-image: none;
       padding-bottom: 0;
    }
 }
+
+@media screen and (min-width:768px) {
+   .section{
+      &__part{
+         padding-bottom: 6.5rem;
+      }
+   }
+}
+@media screen and (max-width:1680px) {
+   .section__part{
+      background-position: 3% 1% , 21% 64% , 101% 25%;
+   }
+}
+
 @media screen and (max-width:992px) {
+   .section__part{
+      background-position: 3% 1% , 38% 84% , 0%;
+      background-size: 170px , 170px , 0px;
+   }
    .section__passions , .section__portfolio{
       background-image: none;
    }
+}
 
+@media screen and (max-width:768px) {
+   .section__part{
+      background-position: 3% 1% , 0% , 95% 25%;
+      background-size: 170px  , 0px , 200px;
+   }
+}
+
+@media screen and (max-width:320px) {
+   .section__part {
+      background-image: none;
+   }
 }

@@ -6,11 +6,11 @@
       font-family: 'Poppins';
       font-weight: 600;
       font-style: normal;
-      letter-spacing: 3px;
-      color: $blue;
+      letter-spacing: 0.2rem;
+      color: $-font-dark-blue;
       span{
          font-weight: 400;
-         color: $dark-blue;
+         color: $-font-light-blue;
       }
    }
 }

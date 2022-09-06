@@ -1,15 +1,17 @@
+[id]{
+   scroll-margin-top: 5.5rem;
+}
+
 .header{
-   // фиксируем сверху
    width: 100%;
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
    background-color: $white;
-   padding: 0 30px;
+   padding: 0 1.6rem;
    z-index: 1000;
    &__container{
-      // контейнер шапки
       width: 100%;
       min-height: 3.3rem;
       display: flex;
@@ -19,7 +21,7 @@
       margin: 0 auto;
    }
 }
-//---------------------------------------------------------------992<  
+
 @media screen and (min-width:992px){
    .header{
       &__container{
@@ -28,3 +30,4 @@
       }
    }
 }
+

@@ -1,47 +1,20 @@
 .picture {   
    text-align: center;
-   // background: url("/imeges/content/vektor-top.svg") -55px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 200px 70px no-repeat;
-   // background-size: 50% 50%, auto auto;
    &__img{
       width: 290px;
    }
 }
-//---------------------------------------------------------------390< 
-@media screen and (min-width:390px) {
-   .picture {   
-      text-align: center;
-      // background: url("/imeges/content/vektor-top.svg") 40px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 320px 60px no-repeat;
-      // background-size: auto auto, auto auto;
-   }
-}
-//---------------------------------------------------------------550<  
-@media screen and (min-width:550px) {
-      .picture {   
-         text-align: center;
-         // background: url("/imeges/content/vektor-top.svg") 120px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 400px 60px no-repeat;
-         // background-size: auto auto, auto auto;
-      }
-   }
-//---------------------------------------------------------------768<   
 @media screen and (min-width:768px){
    .picture {
-      text-align: start;
       order: 2;
-      text-align: center;
-      // background: url("/imeges/content/vektor-top.svg") 120px -10px no-repeat , url("/imeges/content/vetor-bottom.svg") 400px 60px no-repeat;
-      // background-size: 0px, 0px;
       &__img{
          width: auto;
       }
    }
 }
-
-//---------------------------------------------------------------992<  
 @media screen and (min-width:992px){
    .picture {
       padding-top: 40px;
-      text-align: start;
       order: 2;
-      text-align: center;
    }
 }

@@ -1,5 +1,5 @@
 .content {
-   padding-top: 20px;
+   padding-top: 1.1rem;
    &__header {
       margin-top: 0;
       margin-bottom: 1.8rem;
@@ -7,11 +7,11 @@
       font-weight: 600;
       font-size: 2rem;
       letter-spacing: 0.005em;
-      color: $blue;
+      color: $-font-dark-blue;
    }
    &__smail{
-      color: $blue;
       font-weight: 400;
+      color: $-font-dark-blue;
    }
    &__paragraf {
       font-size: 1.2rem;
@@ -31,49 +31,25 @@
       }
    } 
  }
-//---------------------------------------------------------------768<   
 @media screen and (min-width:768px){
    .content {
-      padding-top: 80px;
-      padding-right: 20px;
-      order: 1;
+      padding-top: 4.4rem;
+      padding-right: 1.1rem;
       &__smail{
-         color: $blue;
          font-weight: 400;
          font-size: 1.5rem;
       }
       &__header {
          max-width: 350px;
-         line-height: 37.5px;
          font-weight: 600;
          font-size: 1.5rem;
-         letter-spacing: 1px;
-         color: $blue;
+         letter-spacing: 0.055rem;
       }
    }
 }
-//---------------------------------------------------------------992<  
-
 @media screen and (min-width:992px){
    .content {
-      padding-top: 110px;
-      padding-right: 20px;
+      padding-top: 6.1rem;
       margin: 0;
-      order: 1;
-      // background: url("/imeges/content/vektor-top.svg") 30px 0px no-repeat , url("/imeges/content/vetor-bottom.svg") 300px 310px no-repeat;
-      // background-size: 40% 40% , 30% 30%;
-      &__smail{
-         color: $blue;
-         font-weight: 400;
-         font-size: 1.5rem;
-      }
-      &__header {
-         max-width: 350px;
-         line-height: 37.5px;
-         font-weight: 600;
-         font-size: 1.5rem;
-         letter-spacing: 1px;
-         color: $blue;
-      }
    }
 }
