@@ -1,24 +1,26 @@
 .content {
    padding-top: 1.1rem;
+   .content__title-smail , .content__title{
+      display: block;
+      letter-spacing: 0.005em;
+      line-height: 1.5;
+   }
    &__header {
+      font-size: 2rem;
       margin-top: 0;
       margin-bottom: 1.8rem;
-      line-height: 1.5;
-      font-weight: 600;
-      font-size: 2rem;
-      letter-spacing: 0.005em;
+   }
+   &__title-smail{
+      font-weight: 400;
       color: $-font-dark-blue;
    }
-   &__smail{
-      font-weight: 400;
+   &__title{
+      font-weight: 600;
       color: $-font-dark-blue;
    }
    &__paragraf {
       font-size: 1.2rem;
       letter-spacing: 0.015em;
-   }
-   &__block{
-      display: block;
    }
 }
 @include create-mq($grid__bp-xs - 1 , 'max') {

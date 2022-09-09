@@ -3,16 +3,11 @@
 }
 
 .header{
-   width: 100%;
-   position: fixed;
    top: 0;
-   left: 0;
-   width: 100%;
    background-color: $white;
    padding: 0 1.6rem;
    z-index: 1000;
    &__container{
-      width: 100%;
       min-height: 3.3rem;
       display: flex;
       flex-wrap: wrap;

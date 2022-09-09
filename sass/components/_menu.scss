@@ -10,35 +10,33 @@
    &.active{
       left: 0;
       z-index: 100;
-      overflow: auto;
       transition: all 1s;
       background-color:rgba( $white ,.7);
    }
    &__list{
-      padding-top: 70px;
+      padding-top: 3.8rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       list-style-type: none;
-      padding-bottom: 100px;
-      // text-align: center;
+      padding-bottom: 5.5rem;
    }
    &__item{
       &:not(:first-child){
-         margin-top: 30px;
+         margin-top: 1.6rem;
       }
    }
    &__link{
       color: $black;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.1rem;
       font-weight: 400;
       transition: all 0.2s;
-      padding: 18px 60px;
-      border-radius: 10px;
+      padding: 1rem 3.3rem;
+      border-radius: 0.5rem;
       &:hover{
          color: $white;
-         background-color: $light-blue;
+         background-color: $-bg-light-blue;
       }
    }
 }

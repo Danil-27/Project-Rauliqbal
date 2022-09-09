@@ -1,7 +1,7 @@
 .picture {   
    text-align: center;
    &__img{
-      width: 290px;
+      width: 16.1rem;
    }
 }
 @media screen and (min-width:768px){
@@ -14,7 +14,7 @@
 }
 @media screen and (min-width:992px){
    .picture {
-      padding-top: 40px;
+      padding-top: 2.2rem;
       order: 2;
    }
 }

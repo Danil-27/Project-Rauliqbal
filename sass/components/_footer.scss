@@ -2,7 +2,7 @@
    background-image: url("/imeges/footer/wave.svg") ;
    background-repeat: no-repeat;
    background-size: cover;
-   padding-top: 42vmax;
+   padding-top: 50vmax;
    padding-bottom: 1.1rem;
    &__title{
       text-align: center;
@@ -20,7 +20,7 @@
 
  @include create-mq($grid__bp-md , 'min') {
    .footer{
-      padding-top: 21vmax;
+      padding-top: 23vmax;
    }
  }
 

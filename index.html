@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html id="html__noscroll">
+<html  lang="ru" id="html__noscroll">
 
 <head>
+   
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Rauliqbal</title>
-   <meta name="description"
-      content="Example css grid with using Sass and CSS3 variables, Flexbox, for making responsive, scalable and independent grid, without UI framework." />
+   <meta name="description" content="Example css grid with using Sass and CSS3 variables, Flexbox, for making responsive, scalable and independent grid, without UI framework." />
    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-   <header class="header">
+   <header class="header is-fixed">
       <div class="header__container container">
          <div class="logo">
             <a href="#" class="logo__link">Raul<span>iqbal</span></a>
@@ -31,16 +31,16 @@
       </div>
    </header>
    <main class="page">
-      <section id="section-1" class="section section__part page__part page__img container">
+      <section id="section-1" class="section section_part container">
          <div class="row">
             <div class="picture col-md-5 col-lg-6">
                <img class="picture__img" src="./imeges/content/Men.svg" alt="Тут должны быть картинка)))">
             </div>
             <div class="content col-md-7 col-lg-6">
                <h1 class="content__header">
-                  <div class="content__smail">Hi !</div>
-                  <span class="content_block">I’m Muhamad Raul.</span>
-                  <span class="content_block">a Front-End Developer</span>
+                  <span class="content__title-smail">Hi !</span>
+                  <span class="content__title">I’m Muhamad Raul.</span>
+                  <span class="content__title">a Front-End Developer</span>
                </h1>
                <p class="content__paragraf">Front-End developer based in Bekasi, Indonesian I’am coding with a clean and
                   beautiful problem solving in mind.
@@ -48,25 +48,25 @@
             </div>
          </div>
       </section>
-      <section id="section-2" class="section section__passions container ">
-         <h2 class="subtitles">Additional <span class="subtitles_affter">passions</span></h2>
+      <section id="section-2" class="section section_passions container ">
+         <h2 class="subtitles">Additional <span class="subtitles__affter">passions</span></h2>
          <div class="row row-xs-center">
             <div class="col-xs-9  col-sm-8  col-md-5 col-lg-4">
-               <div class="card">
+               <div class="card card_passions mb-2">
                   <img class="card__imges" src="/imeges/passions/front-end.svg" alt="Тут должны быть картинка)))">
                   <p class="card__subtitles"><span class="card__before">Front-End</span> Developer</p>
                   <p>(Sass, Bootstrap, Tailwind)</p>
                </div>
             </div>
             <div class="col-xs-9  col-sm-8  col-md-5 col-lg-4 ">
-               <div class="card">
+               <div class="card card_passions mb-2">
                   <img class="card__imges" src="/imeges/passions/back-end.svg" alt="Тут должны быть картинка)))">
                   <p class="card__subtitles"><span class="card__before">Back-End</span> Developer</p>
                   <p>(NodeJS, Laravel, Codeigniter)</p>
                </div>
             </div>
             <div class="col-xs-9  col-sm-8  col-md-5 col-lg-4">
-               <div class="card">
+               <div class="card card_passions mb-2">
                   <img class="card__imges" src="/imeges/passions/Ul-UX.svg" alt="Тут должны быть картинка)))">
                   <p class="card__subtitles"><span class="card__before">UI/UX</span> Designer</p>
                   <p>(Figma, Zeplin, Adobe XD)</p>
@@ -74,76 +74,72 @@
             </div>
          </div>
       </section>
-      <section id="section-3" class="section section__portfolio container">
-         <h2 class="subtitles">My <span class="subtitles_affter">portfolio</span></h2>
+      <section id="section-3" class="section section_portfolio container">
+         <h2 class="subtitles">My <span class="subtitles__affter">portfolio</span></h2>
          <div class="row row-xs-center">
             <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">
-               <div class="colum">
-                  <div class="colum__header colum__header_col">
-                     <div class="colum__icon colum__icon_col"><img src="/imeges/portfolio/Group.svg" alt=""></div>
-                     <div class="colum__title colum__title_col">Sendpay</div>
+               <div class="card card_portfolio mb-2">
+                  <div class="card__header card__header_col">
+                     <div class="card__icon card__icon_col"><img src="/imeges/portfolio/Group.svg" alt=""></div>
+                     <div class="card__title card__title_col">Sendpay</div>
                   </div>
-                  <div class="colum__img"><img src="/imeges/portfolio/img-1 1.svg" alt="Тут должны быть картинка)))">
-                  </div>
+                  <div class="card__img"><img src="/imeges/portfolio/img-1.svg" alt="Тут должны быть картинка)))"></div>
                </div>
             </div>
             <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">
-               <div class="colum">
-                  <div class="colum__header colum__header_pillar">
-                     <div class="colum__title colum__title_pillar">E - Commerce</div>
-                     <p class="colum__text colum__text_pillar">Website</p>
+               <div class="card card_portfolio mb-2">
+                  <div class="card__header card__header_pillar">
+                     <div class="card__title card__title_pillar">E - Commerce</div>
+                     <p class="card__text card__text_pillar">Website</p>
                   </div>
-                  <div class="colum__img"><img src="/imeges/portfolio/img-2.svg" alt="Тут должны быть картинка)))">
-                  </div>
+                  <div class="card__img"><img src="/imeges/portfolio/img-2.svg" alt="Тут должны быть картинка)))"></div>
                </div>
             </div>
             <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4 ">
-               <div class="colum">
-                  <div class="colum__header colum__header_columan">
-                     <div class="colum__title colum__title_columan">BeatsLearning</div>
-                     <p class="colum__text colum__text_columan">A symphony of skills</p>
+               <div class="card card_portfolio mb-2">
+                  <div class="card__header card__header_colum">
+                     <div class="card__title card__title_colum">BeatsLearning</div>
+                     <p class="card__text card__text_colum">A symphony of skills</p>
                   </div>
-                  <div class="colum__img"><img src="/imeges/portfolio/img-3.svg" alt="Тут должны быть картинка)))">
-                  </div>
+                  <div class="card__img"><img src="/imeges/portfolio/img-3.svg" alt="Тут должны быть картинка)))"></div>
                </div>
             </div>
          </div>
-         </div>
       </section>
-      <section id="section-4" class="section section__contact container">
-         <h2 class="subtitles">Contact <span class="subtitles_affter">Me</span></h2>
+      <section id="section-4" class="section section_contact container">
+         <h2 class="subtitles">Contact <span class="subtitles__affter">Me</span></h2>
          <div class="row row-center">
             <div class="col-xs-6 col-lg-3">
-               <div class="networks">
+               <a target="_blank" href="https://github.com/" class="networks mb-2">
                   <span class="networks__bg ">
                      <i class="networks__icon icon icon_github  "></i>
                   </span>
                   <p class="networks__title">Github</p>
-               </div>
+               </a>
             </div>
             <div class="col-xs-6 col-lg-3">
-               <div class="networks">
+               <a target="_blank" href="instagram.com" class="networks mb-2">
                   <span class="networks__bg ">
                      <i class="networks__icon icon icon_instagram  "></i>
                   </span>
                   <p class="networks__title">Instagram</p>
-               </div>
+               </a>
             </div>
             <div class="col-xs-6 col-lg-3">
-               <div class="networks">
+               <a target="_blank" href="https://mail.ru/" class="networks mb-2">
                   <span class="networks__bg ">
                      <i class="networks__icon icon icon_email"></i>
                   </span>
                   <p class="networks__title">Email</p>
-               </div>
+               </a>
             </div>
             <div class="col-xs-6 col-lg-3">
-               <div class="networks">
+               <a target="_blank" href="https://support.apple.com/library/content/dam/edam/applecare/images/ru_RU/iOS/ios14-iphone-12-pro-wifi-calling-hero.jpg" class="networks mb-2">
                   <span class="networks__bg">
-                     <i class="networks__icon icon icon_telp  "></i>
+                     <i class="networks__icon icon icon_telp"></i>
                   </span>
                   <p class="networks__title">Telp</p>
-               </div>
+               </a>
             </div>
          </div>
       </section>
@@ -157,3 +153,4 @@
 </body>
 
 </html>
+

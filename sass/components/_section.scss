@@ -1,21 +1,22 @@
 .section{
-   padding-bottom: 9.3rem;
+   &_passions , &_portfolio , &_part {
+      padding-bottom: 4rem;
+   }
    background-repeat: no-repeat;
    background-image: url("/imeges/content/cricle-blue.svg") , url("/imeges/content/cricle-blue.svg") , url("/imeges/content/cricle-blue.svg");
-   &__part{
-      padding-bottom: 3.3rem;
+   &_part{
       background-position: 3% 1% , 21% 64% , 95% 25%;
       background-size: 170px , 155px , 260px ;
    }
-   &__passions{
+   &_passions{
       background-position: 0% 8% , 71% 92%; 
       background-size: 170px, 250px ;
    }
-   &__portfolio{
+   &_portfolio{
       background-position: 3% -6%, 102% 86%;
       background-size: auto , 250px ;
    }
-   &__contact{
+   &_contact{
       background-image: none;
       padding-bottom: 0;
    }
@@ -23,36 +24,39 @@
 
 @media screen and (min-width:768px) {
    .section{
-      &__part{
+      &_passions , &_portfolio {
+         padding-bottom: 7.7rem;
+      }
+      &_part{
          padding-bottom: 6.5rem;
       }
    }
 }
 @media screen and (max-width:1680px) {
-   .section__part{
+   .section_part{
       background-position: 3% 1% , 21% 64% , 101% 25%;
    }
 }
 
 @media screen and (max-width:992px) {
-   .section__part{
+   .section_part{
       background-position: 3% 1% , 38% 84% , 0%;
       background-size: 170px , 170px , 0px;
    }
-   .section__passions , .section__portfolio{
+   .section_passions , .section_portfolio{
       background-image: none;
    }
 }
 
 @media screen and (max-width:768px) {
-   .section__part{
+   .section_part{
       background-position: 3% 1% , 0% , 95% 25%;
       background-size: 170px  , 0px , 200px;
    }
 }
 
 @media screen and (max-width:320px) {
-   .section__part {
+   .section_part {
       background-image: none;
    }
 }

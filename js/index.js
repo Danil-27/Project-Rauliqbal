@@ -1,81 +1,63 @@
 const btn = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const html = document.querySelector('#html__noscroll');
-const width  = window.innerWidth  || document.documentElement.clientWidth || document.body.clientWidth;
+const links = menu.querySelectorAll(".menu__link");
 
-console.log(width)
+let width =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+console.log(`Ширина экрана при загрузке страницы ${width}`);
 
-// Закрывает - откревыет меню бургер . Добоыляет к боди класс noscroll 
-// if( menu && btn) {
-//    btn.addEventListener('click', () => {
-//       menu.classList.toggle('active')
-//       btn.classList.toggle('active')
-//       html.classList.toggle('noscroll')
-//    })
-// };
 
-//Добавить проверку на ширину !
-
-//Клик на пустую область 
-
-// menu.addEventListener('click', e => {
-//    if (e.target.classList.contains('menu')) {
-//       menu.classList.remove('active')
-//       btn.classList.toggle('active')
-//       html.classList.toggle('noscroll')
-//    }
-
-// })
-
-if (width<992){
-// Закрывает - откревыет меню бургер . Добоыляет к боди класс noscroll 2
-   if ( menu && btn) {
-   btn.addEventListener('click', () => {
-      menu.classList.toggle('active')
-      btn.classList.toggle('active')
-      html.classList.toggle('noscroll')
-   })
-};
-//Клик на пустую область 2
-menu.addEventListener('click', e => {
-   if (e.target.classList.contains('menu')) {
-      menu.classList.remove('active')
-      btn.classList.toggle('active')
-      html.classList.toggle('noscroll')
-   }
-});
-//Клик на ссылку закрывает бургер 2
-   menu.querySelectorAll('.menu__link').forEach(link => {
-   link.addEventListener('click' , () =>{
-      menu.classList.remove('active')
-      btn.classList.toggle('active')
-      html.classList.toggle('noscroll')
-   })
-})
+function debounce(originalFn, timeoutMs) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout); // clear timeout every time the function is called
+    timeout = setTimeout(() => originalFn(...args), timeoutMs); // call the original function once "timeoutMs" ms after the last call have elapsed
+  };
 }
 
-// //Клик на ссылку закрывает бургер 
-//    menu.querySelectorAll('.menu__link').forEach(link => {
-//    link.addEventListener('click' , () =>{
-//       menu.classList.remove('active')
-//       btn.classList.toggle('active')
-//       html.classList.toggle('noscroll')
-//    })
-// })
+function handlerResize() {
+  width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  console.log(`Ширина экрана при ресайзе страницы ${width}`);
+}
 
-//==================================================================================
+window.addEventListener("resize", debounce(handlerResize, 500)); 
+
+btn.addEventListener("click", () => {     // Если мы нажимаем на burger
+  menu.classList.toggle("active");        // После нажития переопределяет класс
+  btn.classList.toggle("active");         // После нажития переопределяет класс
+  html.classList.toggle("noscroll");      // После нажития переопределяет класс
+});
+
+// Клик на пустую область 
+menu.addEventListener("click", (e) => {         
+   if (e.target.classList.contains("menu")) {   // contains() Этот метод при проверке наличия класса в списке возвращает булевы true или false .
+      menu.classList.remove("active");          // Если True , то Закрываем класс  
+      btn.classList.toggle("active");           // Если True , то переопределяет класс
+      html.classList.toggle("noscroll");        // Если True , то переопределяет класс
+   }
+});
+
 //плавный переход 
-const anchors = document.querySelectorAll('a[href*="#"')
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+       const blockID = link.getAttribute("href").substring(1);
+         document.getElementById(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+         });
+      if (width < 992) {
+         menu.classList.remove("active");   // После нажития на ссылку закрывает меню 
+         btn.classList.toggle("active");    // После нажития переопределяет класс
+         html.classList.toggle("noscroll"); // После нажития переопределяет класс
+    } 
+  });
+});
+//==================================================================================
 
-anchors.forEach(anchors => {
-   anchors.addEventListener('click' , event =>{
-      event.preventDefault()
-
-      const blockID = anchors.getAttribute('href').substring(1)
-
-      document.getElementById(blockID).scrollIntoView({
-         behavior:'smooth' ,
-         block: 'start' 
-      })
-   })
-})

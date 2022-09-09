@@ -26,14 +26,17 @@ $map-grid-props: (
 );
 
 
-
-
+// fundamentally
+$white: #fff;
+$black:#000;
 $-font-dark-blue: #002265;
 $-font-light-blue: #14279B;
+$-bg-light-blue: #608AF5;
+$dark-blue: #07253C;
 
+// Блок card__title
+$-card-title-dark-blue: #6C63FF;
+$-card-title-light-blue: #4581F6;
 
-$white: #fff;
-$black: #000;
-$blue: #14279B;
-$light-blue: #608AF5;
-$dark-blue:#07253C;
+// Блок networks
+$-networks-grey: #3F3D56;
