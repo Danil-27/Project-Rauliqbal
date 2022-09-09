@@ -7,7 +7,6 @@ let width =
   window.innerWidth ||
   document.documentElement.clientWidth ||
   document.body.clientWidth;
-console.log(`Ширина экрана при загрузке страницы ${width}`);
 
 
 function debounce(originalFn, timeoutMs) {
@@ -23,7 +22,6 @@ function handlerResize() {
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
-  console.log(`Ширина экрана при ресайзе страницы ${width}`);
 }
 
 window.addEventListener("resize", debounce(handlerResize, 500)); 
