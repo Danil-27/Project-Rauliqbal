@@ -1,31 +1,31 @@
-.footer{
-   background-image: url("./imeges/footer/wave.svg") ;
-   background-repeat: no-repeat;
-   background-size: cover;
-   padding-top: 50vmax;
-   padding-bottom: 1.1rem;
-   &__title{
-      text-align: center;
-      font-size: 1.9rem;
-      color: $white;
-      padding: 0 0.5rem;
-   }
+.footer {
+	background-image: url('./imeges/footer/wave.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50vmax;
+	padding-bottom: 1.1rem;
+	&__title {
+		text-align: center;
+		font-size: 1.9rem;
+		color: $white;
+		padding: 0 0.5rem;
+	}
 }
 
-@include create-mq($grid__bp-xs , 'min') {
-   .footer{
-      padding-top: 42vmax;
-   }
- }
+@include create-mq($grid__bp-xs, 'min') {
+	.footer {
+		padding-top: 42vmax;
+	}
+}
 
- @include create-mq($grid__bp-md , 'min') {
-   .footer{
-      padding-top: 23vmax;
-   }
- }
+@include create-mq($grid__bp-md, 'min') {
+	.footer {
+		padding-top: 23vmax;
+	}
+}
 
- @media screen and(min-width:2560px) {
-   .footer{
-      padding-top: 15vmax;
-   }
- }
+@media screen and (min-width: 2560px) {
+	.footer {
+		padding-top: 15vmax;
+	}
+}

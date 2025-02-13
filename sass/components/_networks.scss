@@ -1,25 +1,25 @@
 .networks {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-decoration: none;
-   &__bg {
-      display: flex;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 9.2rem;
-      height: 8.9rem;
-      background-image: url("./imeges/contact/blue_background.svg") ;
-   }
-   &__icon {
-      margin: auto;
-   }
-   &__title {
-      text-align: center;
-      color: $-networks-grey;
-      font-size: 1.9rem;
-      letter-spacing: .1rem;
-      font-weight: 500;
-      margin-top: 1.6rem ;
-   }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	&__bg {
+		display: flex;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 9.2rem;
+		height: 8.9rem;
+		background-image: url('../imeges/contact/blue_background.svg');
+	}
+	&__icon {
+		margin: auto;
+	}
+	&__title {
+		text-align: center;
+		color: $-networks-grey;
+		font-size: 1.9rem;
+		letter-spacing: 0.1rem;
+		font-weight: 500;
+		margin-top: 1.6rem;
+	}
 }

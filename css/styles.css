@@ -241,8 +241,8 @@ svg:not(:root) {
    * 1. Black prints faster: http://www.sanbeiji.com/archives/953
    */
   *,
-*:before,
-*:after {
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important; /* [1] */
     -webkit-box-shadow: none !important;
@@ -250,7 +250,7 @@ svg:not(:root) {
     text-shadow: none !important;
   }
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
   a[href]:after {
@@ -264,11 +264,11 @@ a:visited {
    * pseudo protocol.
   */
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -279,20 +279,20 @@ blockquote {
     display: table-header-group;
   }
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
   img {
     max-width: 100% !important;
   }
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
@@ -2177,16 +2177,16 @@ body {
   height: 5.5rem;
 }
 .icon_github {
-  background-image: url("/imeges/contact/Github.svg");
+  background-image: url("../imeges/contact/Github.svg");
 }
 .icon_instagram {
-  background-image: url("/imeges/contact/Instagram.svg");
+  background-image: url("../imeges/contact/Instagram.svg");
 }
 .icon_email {
-  background-image: url("/imeges/contact/email.svg");
+  background-image: url("../imeges/contact/email.svg");
 }
 .icon_telp {
-  background-image: url("/imeges/contact/telefhon.svg");
+  background-image: url("../imeges/contact/telefhon.svg");
 }
 
 .logo {
@@ -2498,13 +2498,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("/imeges/portfolio/circle-1.svg") 0 0 no-repeat;
+  background: url("./imeges/portfolio/circle-1.svg") 0 0 no-repeat;
 }
 .card_portfolio .card__header_pillar {
-  background: url("/imeges/portfolio/cricle-2.svg") 0 0 no-repeat;
+  background: url("./imeges/portfolio/cricle-2.svg") 0 0 no-repeat;
 }
 .card_portfolio .card__header_colum {
-  background: url("/imeges/portfolio/cricle-3.svg") 0 0 no-repeat;
+  background: url("./imeges/portfolio/cricle-3.svg") 0 0 no-repeat;
 }
 .card_portfolio .card__title {
   padding-top: 0.5rem;
@@ -2561,7 +2561,7 @@ body {
   background-position: center;
   width: 9.2rem;
   height: 8.9rem;
-  background-image: url("/imeges/contact/blue_background.svg");
+  background-image: url("../imeges/contact/blue_background.svg");
 }
 .networks__icon {
   margin: auto;
@@ -2577,7 +2577,7 @@ body {
 
 .section {
   background-repeat: no-repeat;
-  background-image: url("/imeges/content/cricle-blue.svg"), url("/imeges/content/cricle-blue.svg"), url("/imeges/content/cricle-blue.svg");
+  background-image: url("./imeges/content/cricle-blue.svg"), url("./imeges/content/cricle-blue.svg"), url("/imeges/content/cricle-blue.svg");
 }
 .section_passions, .section_portfolio, .section_part {
   padding-bottom: 4rem;
@@ -2633,7 +2633,7 @@ body {
   }
 }
 .footer {
-  background-image: url("/imeges/footer/wave.svg");
+  background-image: url("./imeges/footer/wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50vmax;

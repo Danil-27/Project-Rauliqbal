@@ -1,19 +1,19 @@
-.icon{
-   display: inline-block;
-   background-repeat: no-repeat;
-   background-position: center;
-   width: 5.5rem;
-   height: 5.5rem;
-   &_github {
-      background-image: url("./imeges/contact/Github.svg");
-   }
-   &_instagram{
-      background-image: url("./imeges/contact/Instagram.svg");
-   }
-   &_email {
-      background-image: url("./imeges/contact/email.svg");
-   }
-   &_telp {
-      background-image:  url("./imeges/contact/telefhon.svg");
-   }
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 5.5rem;
+	height: 5.5rem;
+	&_github {
+		background-image: url('../imeges/contact/Github.svg');
+	}
+	&_instagram {
+		background-image: url('../imeges/contact/Instagram.svg');
+	}
+	&_email {
+		background-image: url('../imeges/contact/email.svg');
+	}
+	&_telp {
+		background-image: url('../imeges/contact/telefhon.svg');
+	}
 }
