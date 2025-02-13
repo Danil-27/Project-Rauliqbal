@@ -1,82 +1,82 @@
-.card{
-   background-color: $white;
-   box-shadow: 0px 0px 15px 0px #c7c6d4;
-   padding: 1.1rem;
-   border-radius: 0.7rem;
-   &__subtitles{
-      font-size: 1.4rem;
-   }
-   &__before{
-      font-weight: 600;
-   }
+.card {
+	background-color: $white;
+	box-shadow: 0px 0px 15px 0px #c7c6d4;
+	padding: 1.1rem;
+	border-radius: 0.7rem;
+	&__subtitles {
+		font-size: 1.4rem;
+	}
+	&__before {
+		font-weight: 600;
+	}
 }
-.card_passions{
-   text-align: center;
-}
-
-@media screen and (min-width:768px) {
-   .card_passions{
-      //Делаем меньше паддинги для того , чтобы текст не переносился 
-      padding: 0.5rem;
-   }
+.card_passions {
+	text-align: center;
 }
 
-@media screen and (min-width:795px) {
-   .card_passions{
-      padding: 1.1rem;
-   }
+@media screen and (min-width: 768px) {
+	.card_passions {
+		//Делаем меньше паддинги для того , чтобы текст не переносился
+		padding: 0.5rem;
+	}
 }
 
-.card_portfolio{
-   position: relative;
-   max-width: 19.3rem;
-   margin-left: auto;
-   margin-right: auto;
-   .card__header{
-      min-height: 10.8rem;
-      margin-bottom: 2rem;
-      &_col{
-         display: flex;
-         background: url("./imeges/portfolio/circle-1.svg") 0 0 no-repeat;
-      }
-      &_pillar{
-         background: url("./imeges/portfolio/cricle-2.svg") 0 0 no-repeat;
-      }
-      &_colum{
-         background: url("./imeges/portfolio/cricle-3.svg") 0 0 no-repeat;
-      }
-   }
-   .card__title{
-      padding-top: 0.5rem;
-      padding-left: 0.8rem;
-      font-size: 1.4rem;
-      font-weight: 600;
-      &_col{
-         color: $-card-title-light-blue;
-      }
-      &_pillar{
-         color: $-card-title-light-blue;
-      }
-      &_columan{
-            color: $black;
-      }
-   }
-   .card__text{
-      font-size: 0.9rem;
-      line-height: 0rem;
-      &_pillar{
-         padding-left: 7.3rem;
-         color: $-card-title-light-blue;
-         line-height: 0rem;
-      }
-      &_columan{
-         padding-left: 0.8rem;
-         color: $black;
-      }
-   }
-   .card__img{
-      position: absolute;
-      bottom: 0px;
-      right: 4px;
-   }
+@media screen and (min-width: 795px) {
+	.card_passions {
+		padding: 1.1rem;
+	}
+}
+
+.card_portfolio {
+	position: relative;
+	max-width: 19.3rem;
+	margin-left: auto;
+	margin-right: auto;
+	.card__header {
+		min-height: 10.8rem;
+		margin-bottom: 2rem;
+		&_col {
+			display: flex;
+			background: url('../imeges/portfolio/circle-1.svg') 0 0 no-repeat;
+		}
+		&_pillar {
+			background: url('../imeges/portfolio/cricle-2.svg') 0 0 no-repeat;
+		}
+		&_colum {
+			background: url('../imeges/portfolio/cricle-3.svg') 0 0 no-repeat;
+		}
+	}
+	.card__title {
+		padding-top: 0.5rem;
+		padding-left: 0.8rem;
+		font-size: 1.4rem;
+		font-weight: 600;
+		&_col {
+			color: $-card-title-light-blue;
+		}
+		&_pillar {
+			color: $-card-title-light-blue;
+		}
+		&_columan {
+			color: $black;
+		}
+	}
+	.card__text {
+		font-size: 0.9rem;
+		line-height: 0rem;
+		&_pillar {
+			padding-left: 7.3rem;
+			color: $-card-title-light-blue;
+			line-height: 0rem;
+		}
+		&_columan {
+			padding-left: 0.8rem;
+			color: $black;
+		}
+	}
+	.card__img {
+		position: absolute;
+		bottom: 0px;
+		right: 4px;
+	}
 }
